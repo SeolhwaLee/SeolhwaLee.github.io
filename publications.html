@@ -237,9 +237,17 @@
         }
         
         .publication-figure img {
-            max-width: 100%;
+            max-width: 70%;
             height: auto;
-            border: 1px solid #ddd;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .publication-figure img:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
         
         .page__footer {
